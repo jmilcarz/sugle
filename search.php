@@ -117,5 +117,8 @@ if (isset($_GET['q'])) {
                header("Location: https://www.google.com/search?q=" . $shqy . "");
                exit();
           }
+}else {
+     header("Location: index.php");
+     exit();
 }
 ?>
