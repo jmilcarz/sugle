@@ -2,9 +2,9 @@
      --page-background-color: #f3f3f3;
 
      --sugle-color: #F53435;
-     --sugle-color-2: #BC1654;
+     --sugle-color-2: #b51f56;
      --sugle-color-3: #86415E;
-     --sugle-color-4: #42A48D;
+     --sugle-color-4: #baace2;
      --sugle-color-5: #F09648;
 }
 
@@ -12,14 +12,163 @@ body {
      margin: 0;
      font-family: 'Barlow Semi Condensed', sans-serif;
      background: var(--page-background-color);
+     overflow: hidden;
 }
-.blur {filter: blur(2px);} .notblur {filter: blur(0px);}
+.blur {filter: blur(2.5px);} .notblur {filter: blur(0px);}
 a {color: var(--sugle-color-5); text-decoration: none;}
 
-#searchEngine > .search-engine-wrapper > .search-engine-logo > h1 {
+img#background-img {
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: -1000;
+     height: 100vh;
+     width: 100vw;
+     object-fit: cover;
+}
+
+.search-engine-wrapper {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100vw;
+     height: 100vh;
+     background: rgba(74, 74, 74, 0.2);
+     z-index: 1000;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+}
+
+.search-engine-wrapper > .search-engine-logo {
+     width: 100vw;
+     text-align: center;
+     margin-top: -100px;
+}
+
+@media screen and (max-height: 750px) {
+     .search-engine-wrapper > .search-engine-logo {
+          margin: 0px;
+     }
+}
+
+.search-engine-wrapper > .search-engine-logo > h1 {
      font-family: 'Shrikhand', sans-serif;
      font-weight: 300;
-     font-size: 90px;
+     font-size: 125px;
      margin: 0;
      color: var(--sugle-color-4);
+     filter: drop-shadow(0px 5px 3px #6b6868);
+}
+
+@media screen and (min-width: 1215px) {
+     .search-engine-wrapper > .search-engine-logo > h1 {
+          font-size: 145px;
+     }
+}
+
+@media screen and (max-width: 415px) {
+     .search-engine-wrapper > .search-engine-logo > h1 {
+          font-size: 110px;
+     }
+}
+
+@media screen and (max-width: 365px) {
+     .search-engine-wrapper > .search-engine-logo > h1 {
+          font-size: 90px;
+     }
+}
+
+.search-engine-wrapper > .search-engine-form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     max-width: 540px;
+     width: 100%;
+     box-sizing: border-box;
+     padding: 0 15px;
+}
+
+@media screen and (min-width: 1215px) {
+     .search-engine-wrapper > .search-engine-form {
+          max-width: 640px;
+     }
+}
+
+.search-engine-form > form {
+     width: 100%;
+}
+
+.search-engine-form > form > input {
+     outline: none;
+     border: 3px solid var(--sugle-color-4);
+     border-radius: 0px;
+     margin: 0;
+     box-sizing: border-box;
+     padding: 0 5px;
+     height: 42px;
+     width: 100%;
+     font-size: 14px;
+     font-family: 'Fira Sans', sans-serif;
+     filter: drop-shadow(0px 5px 3px #6b6868);
+     transition: 120ms all ease-in-out;
+     background: rgba(255, 255, 255, 0.9);
+}
+
+@media screen and (min-width: 1215px) {
+     .search-engine-form > form > input {
+          height: 52px;
+          font-size: 16px;
+          border: 4px solid var(--sugle-color-4);
+     }
+}
+
+@media screen and (max-width: 365px) {
+     .search-engine-form > form > input {
+          height: 38px;
+          border: 2px solid var(--sugle-color-4);
+          font-size: 13.5px;
+     }
+}
+
+.search-engine-form > form > input:focus, .search-engine-form > form > input:hover {
+     border-color: var(--sugle-color-5);
+}
+
+.search-engine-form > ul.links {
+     list-style-type: none;
+     padding: 0;
+     margin: 0;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     height: 65px;
+     width: 100%;
+}
+
+.search-engine-form > ul.links > li > a {
+     color: var(--sugle-color-4);
+     font-size: 21px;
+     filter: drop-shadow(0px 0px 3px #2a2a2a);
+     transition: 90ms all ease-in-out;
+}
+
+.search-engine-form > ul.links > li > a:hover {
+     color: var(--sugle-color-5);
+}
+
+.search-engine-wrapper .info > p {
+     margin: none;
+     color: var(--sugle-color-4);
+     font-size: 15px;
+     background: rgba(0, 0, 0, 0.4);
+     padding: 8px 15px;
+     border-radius: 3px;
+     text-align: center;
+}
+
+.search-engine-wrapper .info > p > b {
+     font-weight: bold;
+     color: var(--sugle-color-5);
 }
