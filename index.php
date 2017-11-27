@@ -1,11 +1,11 @@
 <?php $bgRandNumber = rand(1, 4); ?>
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <title>sugle search</title>
+     <title>suggle search</title>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
      <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,600|Fira+Sans|Shrikhand" rel="stylesheet">
      <link rel="stylesheet" href="assets/css/main.css">
@@ -28,11 +28,11 @@
           ?>
           <div class="search-engine-wrapper">
                <div class="search-engine-logo">
-                    <h1>Sugle</h1>
+                    <h1>Suggle</h1>
                </div>
                <div class="search-engine-form">
                     <form action="search.php" method="get">
-                         <input type="search" name="q" placeholder="Search sugle, google, wikipedia & web...">
+                         <input type="search" name="q" placeholder="Search suggle, google, wikipedia & web...">
                     </form>
                     <ul class="links">
                          <li><a href="https://www.google.com"><i class="fa fa-google"></i></a></li>
