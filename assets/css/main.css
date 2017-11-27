@@ -257,3 +257,31 @@ nav#sitenav > .container > form > input {
 nav#sitenav > .container > form > input:focus {
      border-color: var(--sugle-color-2);
 }
+
+/* suggle database results */
+
+#suggle-search-results {
+     margin-top: 25px;
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 25px;
+}
+
+#suggle-search-results > .column {
+     background: #fff;
+}
+
+#suggle-search-results > .column > header {
+     height: 75px;
+     border-bottom: 3px solid var(--page-background-color);
+}
+
+#suggle-search-results > .column > header > h1 {
+     font-size: 34px;
+     text-align: center;
+     line-height: 75px;
+     text-transform: uppercase;
+     font-weight: 600;
+     margin: 0;
+     font-family: 'Fira Sans', sans-serif;
+}

@@ -7,7 +7,7 @@
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
      <title>suggle search</title>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,600|Fira+Sans|Shrikhand" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,600|Fira+Sans:400,600,800|Shrikhand" rel="stylesheet">
      <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
