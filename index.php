@@ -42,7 +42,20 @@
                image.className = "noblur";
           }
           setTimeout(function() {
-               bigImage.src = "bgimg.jpg";
+               <?php
+                    if ($bgRandNumber === 1) {
+                         echo 'bigImage.src = "assets/img/bg1-big.jpg"';
+                    }elseif ($bgRandNumber === 2) {
+                         echo 'bigImage.src = "assets/img/bg2-big.jpg"';
+                    }elseif ($bgRandNumber === 3) {
+                         echo 'bigImage.src = "assets/img/bg3-big.jpg"';
+                    }elseif ($bgRandNumber === 4) {
+                         echo 'bigImage.src = "assets/img/bg4-big.jpg"';
+                    }else {
+                         echo "Ooops, something went <b>wrong</b> :/";
+                         exit();
+                    }
+               ?>
           }, 50);
      </script>
 </body>
