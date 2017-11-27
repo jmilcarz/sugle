@@ -12,7 +12,6 @@ body {
      margin: 0;
      font-family: 'Barlow Semi Condensed', sans-serif;
      background: var(--page-background-color);
-     overflow: hidden;
 }
 .blur {filter: blur(2.5px);} .notblur {filter: blur(0px);}
 a {color: var(--sugle-color-5); text-decoration: none;}
