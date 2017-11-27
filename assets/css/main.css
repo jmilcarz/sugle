@@ -171,3 +171,89 @@ img#background-img {
      font-weight: bold;
      color: var(--sugle-color-5);
 }
+
+/* container */
+
+.container {
+     max-width: 1200px;
+     margin: 0 auto;
+}
+
+@media screen and (max-width: 1215px) {
+     .container {
+          box-sizing: border-box;
+          padding: 0 15px;
+     }
+}
+
+
+/* navigation */
+
+nav#sitenav {
+     border-bottom: 3px solid #ecebec;
+     height: 65px;
+}
+
+@media screen and (max-width: 610px) {
+     nav#sitenav {
+          height: auto;
+          padding: 5px 0 20px 0;
+     }
+}
+
+nav#sitenav > .container {
+     height: 100%;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+
+@media screen and (max-width: 610px) {
+     nav#sitenav > .container {
+          flex-direction: column;
+          justify-content: flex-start;
+     }
+}
+
+nav#sitenav > .container > a {
+     font-family: 'Shrikhand', sans-serif;
+     text-decoration: none;
+     margin: 0;
+     font-size: 32px;
+     color: var(--sugle-color-5);
+}
+
+nav#sitenav > .container > form {
+     max-width: 380px;
+     width: 100%;
+}
+
+@media screen and (max-width: 610px) {
+     nav#sitenav > .container > form {
+          max-width: 100%;
+          margin-top: 15px;
+     }
+
+     nav#sitenav > .container > a {
+          font-size: 36px;
+     }
+}
+
+nav#sitenav > .container > form > input {
+     outline: none;
+     border: 3px solid var(--sugle-color-5);
+     border-radius: 0px;
+     margin: 0;
+     box-sizing: border-box;
+     padding: 0 5px;
+     height: 42px;
+     width: 100%;
+     font-size: 14px;
+     font-family: 'Fira Sans', sans-serif;
+     transition: 120ms all ease-in-out;
+     background: rgba(255, 255, 255, 0.9);
+}
+
+nav#sitenav > .container > form > input:focus {
+     border-color: var(--sugle-color-2);
+}
