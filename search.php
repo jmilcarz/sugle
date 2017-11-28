@@ -102,16 +102,6 @@ if (isset($_GET['q'])) {
                exit();
           }
 
-
-     // suggle database
-
-     $isSuggle = substr($shqy, 0, 6);
-     if ($isSuggle === "suggle") {
-          $suggleWithOutSuggle = substr($shqy, 7);
-          header("Location: suggle.php?q=" . $suggleWithOutSuggle . "");
-          exit();
-     }
-
      // google
           if (!empty($shqy)) {
                header("Location: https://www.google.com/search?q=" . $shqy . "");

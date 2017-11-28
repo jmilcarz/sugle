@@ -32,7 +32,7 @@
                </div>
                <div class="search-engine-form">
                     <form action="search.php" method="get">
-                         <input type="search" name="q" placeholder="Search suggle, google, wikipedia & web...">
+                         <input type="search" name="q" placeholder="Search google, wikipedia & web...">
                     </form>
                     <ul class="links">
                          <li><a href="https://www.google.com"><i class="fa fa-google"></i></a></li>
@@ -45,15 +45,13 @@
                     </ul>
                     <div class="info">
                          <?php
-                         $randHint = rand(1, 4);
+                         $randHint = rand(1, 3);
 
                          if ($randHint === 1) {
                               echo '<p><b>hint!</b> If you want to search <b>wikipedia</b> then at the beginning of the query write <b>"wiki"</b>!</p>';
                          }elseif ($randHint === 2) {
-                              echo '<p><b>hint!</b> If you want to search <b>sugle database</b> then at the beginning of the query write <b>"sugle"</b>!</p>';
-                         }elseif ($randHint === 3) {
                               echo '<p><b>hint!</b> If you want to search <b>google</b> then type anything you want!</p>';
-                         }elseif ($randHint === 4) {
+                         }elseif ($randHint === 3) {
                               echo '<p><b>hint!</b> If you want to search <b>web</b> then type <b>full address</b> starting with <b>www</b>!</p>';
                          }
                          ?>
