@@ -1,6 +1,7 @@
 <?php
 
 if (isset($_GET['q'])) {
+     require_once('classes/db.php');
      $shqy = $_GET['q'];
 
      // wikipedia
@@ -9,6 +10,7 @@ if (isset($_GET['q'])) {
                $shqyWithOutWiki = substr($shqy, 4);
                $shqyWithOutW = str_replace('', '%20', $shqyWithOutWiki);
                $shqyW = $shqyWithOutW;
+               
                header("Location: https://pl.wikipedia.org/w/index.php?search=" . $shqyW . "");
                exit();
           }
